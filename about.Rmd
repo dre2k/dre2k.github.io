@@ -1,7 +1,6 @@
 ---
 title: "Andre E. Kim"
-description: |
-  Some additional details about the blog
+description: "Hello."
 ---
 
 ```{r setup, include=FALSE}

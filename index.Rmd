@@ -1,5 +1,37 @@
 ---
-title: "My Blog"
+title: "Andre E. Kim"
+# description: Testing
+image: "img/ak_profile.jpeg"
+# color1: "#abd1ff"
+# color2: "#e54b22"
+# angle: 130
+links:
+  - label: GitHub
+    url: "https://github.com/dre2k/"
+output:
+  postcards::trestles
 site: distill::distill_website
-listing: posts
 ---
+
+## About
+
+I am an analyst working in the genomics/genetic epidemiology field, primarily investigating interactions between genetic variants and environmental exposures. I use R for almost everything - [reproducible research](https://rmarkdown.rstudio.com/), [workflow management](https://books.ropensci.org/targets/), [presentations](https://bookdown.org/yihui/rmarkdown/xaringan.html). My github is a disorganized mess. 
+
+## Education
+
+**University of Southern California** | Los Angeles, CA
+
+MPH, Ph.D. Molecular Epidemiology
+
+**University of California, Berkeley** | Berkeley, CA
+
+B.A. Molecular and Cell Biology
+
+## Interests
+
+[Music](https://open.spotify.com/artist/2NFrAuh8RQdQoS7iYFbckw) I enjoy playing piano and bass, wanna jam sometime
+
+[Spending time outdoors](www.google.com)
+
+[Reading](https://libbyapp.com/)
+

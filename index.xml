@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
-    <title>My Blog</title>
-    <link>https://beta.rstudioconnect.com/content/11424/</link>
-    <atom:link href="https://beta.rstudioconnect.com/content/11424/index.xml" rel="self" type="application/rss+xml"/>
-    <description>Learning how to use distill to create a blog. I have a very bad track record of keeping up with these things
+    <title>Andre E. Kim</title>
+    <link>https://dre2k.github.io</link>
+    <atom:link href="https://dre2k.github.io/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Personal Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate>
-    <item>
-      <title>Welcome to My Blog</title>
-      <dc:creator>Nora Jones</dc:creator>
-      <link>https://beta.rstudioconnect.com/content/11424/posts/welcome</link>
-      <description>Welcome to our new blog, My Blog. We hope you enjoy 
-reading what we have to say!</description>
-      <guid>https://beta.rstudioconnect.com/content/11424/posts/welcome</guid>
-      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate>
   </channel>
 </rss>

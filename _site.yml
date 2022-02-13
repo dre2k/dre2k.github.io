@@ -1,20 +1,34 @@
-name: "blog"
-title: "My Blog"
+name: "AEK"
+title: "AEK"
 description: |
-  Learning how to use distill to create a blog. I have a very bad track record of keeping up with these things
-base_url: https://beta.rstudioconnect.com/content/11424/
-collections:
-  posts:
-    categories: false
-    categories_metadata: false
-    authors_metadata: false
+  Personal Blog
+base_url: https://dre2k.github.io
 output_dir: "."
 navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Gallery"
-      href: gallery.html
-output: distill::distill_article
+    - text: "Research"
+      href: research.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Learning"
+      menu:
+        - text: "Linear Algebra"
+          href: linear_algebra.html
+  search: true
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: true
+    citations: false
+    # share: [twitter]
+output:
+  distill::distill_article:
+    highlight: tango
+    highlight_downlit: true
+    css: styles.css
+    toc: true
+    fig_caption: true
+exclude: ['etc', 'renv*']

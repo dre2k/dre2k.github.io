@@ -1,7 +1,0 @@
----
-title: "Gallery of featured posts"
-listing:
-  posts:
-    - 2022-02-02-another-post
-    - 2022-02-02-test-post
----

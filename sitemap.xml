@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://beta.rstudioconnect.com/content/11424/about.html</loc>
-    <lastmod>2022-02-02T10:02:37-08:00</lastmod>
+    <loc>https://dre2k.github.io/about.html</loc>
+    <lastmod>2022-02-11T16:49:07-08:00</lastmod>
   </url>
   <url>
-    <loc>https://beta.rstudioconnect.com/content/11424/gallery.html</loc>
-    <lastmod>2022-02-02T09:25:01-08:00</lastmod>
+    <loc>https://dre2k.github.io/blog.html</loc>
+    <lastmod>2022-02-12T15:51:38-08:00</lastmod>
   </url>
   <url>
-    <loc>https://beta.rstudioconnect.com/content/11424/</loc>
-    <lastmod>2022-02-02T03:31:23-08:00</lastmod>
+    <loc>https://dre2k.github.io/</loc>
+    <lastmod>2022-02-12T14:44:21-08:00</lastmod>
   </url>
   <url>
-    <loc>https://beta.rstudioconnect.com/content/11424/posts/welcome/</loc>
-    <lastmod>2022-02-02T03:31:25-08:00</lastmod>
+    <loc>https://dre2k.github.io/linear_algebra.html</loc>
+    <lastmod>2022-02-12T16:58:57-08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://dre2k.github.io/research.html</loc>
+    <lastmod>2022-02-12T15:11:10-08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://dre2k.github.io/posts/2022-02-12-hello-world/</loc>
+    <lastmod>2022-02-12T15:51:10-08:00</lastmod>
   </url>
 </urlset>
