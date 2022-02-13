@@ -16,6 +16,8 @@ navbar:
       menu:
         - text: "Linear Algebra"
           href: linear_algebra.html
+    - text: "Gallery"
+      href: gallery.html
   search: true
 collections:
   posts:

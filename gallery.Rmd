@@ -1,0 +1,30 @@
+---
+title: "Photos"
+description: |
+  Loook
+author:
+  - name: Andre Kim
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Silverwood Lake
+```{r}
+knitr::include_graphics("img/IMG_5823.jpg")
+```
+
+<br>
+
+## New Year's Day
+Riding a bike through this hard packed snow was an experience  
+
+```{r}
+knitr::include_graphics("img/IMG_5382.jpg")
+```
+
+
