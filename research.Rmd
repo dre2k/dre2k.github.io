@@ -1,13 +1,14 @@
 ---
 title: "Research"
+output: distill::distill_article
 ---
 
-<style>
-p {
-  font-family: Roboto;
-  text-align: justify;
-}
-</style>
+<!-- <style> -->
+<!-- p { -->
+<!--   font-family: Roboto; -->
+<!--   text-align: justify; -->
+<!-- } -->
+<!-- </style> -->
 
 ## Publications
 **Kim A.E.**, Drew D.A., et al (2021). “NSAIDs and colorectal cancer: results from a genome-wide
