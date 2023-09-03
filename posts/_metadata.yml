@@ -2,7 +2,10 @@
 
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
-freeze: true
+freeze: false
 
 # Enable banner style title blocks
-title-block-banner: true
+title-block-banner: false
+
+# fields? 
+fields: [date, title, reading-time, description, categories]

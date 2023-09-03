@@ -1,0 +1,11 @@
+{
+  "hash": "e303d699908bd14f5f77c30cda93591c",
+  "result": {
+    "markdown": "---\ntitle: Welcome To My Blog\nauthor: Tristan O'Malley\ndate: '2023-08-29'\ncategories:\n  - news\n---\n\ndoes python code work here\n\n\\\nFor a demonstration of a line plot on a polar axis, see \\@fig-polar.\n\n\\`\\`\\`{python} #\\| label: fig-polar #\\| fig-cap: \"A line plot on a polar axis\"\n\nimport numpy as np import matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01) theta = 2 \\* np.pi \\* r fig, ax = plt.subplots( subplot_kw = {'projection': 'polar'} ) ax.plot(theta, r) ax.set_rticks(\\[0.5, 1, 1.5, 2\\]) ax.grid(True) plt.show() \\`\\`\\`\n\nThis is the first post in a Quarto blog. Welcome! this i\n\nthis is amazing jesus christ . i see this is live ![](thumbnail.jpg)\n\nSince this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
