@@ -13,11 +13,10 @@ about:
 
 ---
 
-
 ## Work
 Data Science | Statistical Genetics
 
-## Interests and stereotypes
+## Interests
 - going to national parks
 - *vista points*
 - mountain biking

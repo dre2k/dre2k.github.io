@@ -1,0 +1,12 @@
+---
+title: "Self directed learning"
+author: "Andre Kim"
+date: "2023-09-20"
+categories: [nonsense]
+---
+
+Committing to writing SOMETHING weekly. 
+
+I'm currently watching a series of linear algebra lectures on YouTube (https://youtube.com/playlist?list=PLl-gb0E4MII03hiCrZa7YqxUMEeEPmZqK&si=lmAawjApPzFVjix7) by Kimberly Brehm. They're excellent lectures, with clearly laid out explanations and examples. I've tried many different MOOCs and lecture videos with minimal success, but I'm finding this one easier to stick with. 
+
+In addition, using an R package to follow along examples and solve problems (https://cran.r-project.org/web/packages/matlib/index.html). I understand it's not advisable to rely on tools like these to solve problems since it robs you of practice opportunities, but I'm more interested in breadth and scope of concepts.

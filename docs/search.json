@@ -14,11 +14,18 @@
     "text": "First post"
   },
   {
+    "objectID": "posts/20230920/index.html",
+    "href": "posts/20230920/index.html",
+    "title": "Self directed learning",
+    "section": "",
+    "text": "Committing to writing SOMETHING weekly.\nI’m currently watching a series of linear algebra lectures on YouTube (https://youtube.com/playlist?list=PLl-gb0E4MII03hiCrZa7YqxUMEeEPmZqK&si=lmAawjApPzFVjix7) by Kimberly Brehm. They’re excellent lectures, with clearly laid out explanations and examples. I’ve tried many different MOOCs and lecture videos with minimal success, but I’m finding this one easier to stick with.\nIn addition, using an R package to follow along examples and solve problems (https://cran.r-project.org/web/packages/matlib/index.html). I understand it’s not advisable to rely on tools like these to solve problems since it robs you of practice opportunities, but I’m more interested in breadth and scope of concepts."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nHello World R\n\n\n\n\n\n\n\nnonsense\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nHello World\n\n\n\n\n\n\n\nnonsense\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSelf directed learning\n\n\n\n\n\n\n\nnonsense\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2023\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nHello World R\n\n\n\n\n\n\n\nnonsense\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nHello World\n\n\n\n\n\n\n\nnonsense\n\n\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -35,10 +42,10 @@
     "text": "Data Science | Statistical Genetics"
   },
   {
-    "objectID": "about.html#interests-and-stereotypes",
-    "href": "about.html#interests-and-stereotypes",
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
     "title": "Andre Kim",
-    "section": "Interests and stereotypes",
-    "text": "Interests and stereotypes\n\ngoing to national parks\nvista points\nmountain biking\nclimbing"
+    "section": "Interests",
+    "text": "Interests\n\ngoing to national parks\nvista points\nmountain biking\nclimbing"
   }
 ]
