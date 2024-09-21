@@ -1,24 +1,25 @@
 ---
-title: "Andre Kim"
-image: img/IMG_1540.jpg
+title: "Andre E. Kim"
+image: img/IMG_1917.jpeg
 about:
   template: trestles
   links:
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
 
 ---
 
-## About me 
-My background is in Molecular Epidemiology, I'm currently in industry working with genetic data and machine learning models. 
-Using this website as a public notebook to explore topics that interest me.  
+## About Me
 
-I like spending time outdoors, contemplating our place in the world, silencing expectations imposed on me by myself or others and for a moment simply being present to take in the sights/sounds/smells. Incredibly, I have not yet pooped in the woods but hope to change that with future bike-packing trips. I spend a lot of time practicing musical instruments, I'm not excellent nor am I shit, which is perhaps a good description of me generally. I enjoy being part of a group that meshes well, generates excitement, and gets things done. Mental health is a wave, I'm increasingly forgiving myself for struggling with it sporadically.   
+Hi there, I am a Senior Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.  
 
----
+This is a personal website and I'm using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting! 
 
-The photo on the left is me standing on the shores of Soda Lake in Carrizo National Monument (2024). The alkaline salts got everywhere and people were MAD
+## Education
+
+University of Southern California  
+MPH, PhD Molecular Epidemiology
+
+UC Berkeley  
+B.A. in Molecular Cell Biology

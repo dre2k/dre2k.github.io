@@ -1,15 +1,25 @@
 ---
-title: ""
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
-  fields: [date, title, reading-time, description, categories, image]
-page-layout: full
-title-block-banner: true
+title: "Andre E. Kim"
+image: img/IMG_1917.jpeg
+about:
+  template: trestles
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+
 ---
 
+## About Me
 
+Hi there, I am a Senior Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.  
+
+This is a personal website and I'm using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting! 
+
+## Education
+
+University of Southern California  
+MPH, PhD Molecular Epidemiology
+
+UC Berkeley  
+B.A. in Molecular Cell Biology

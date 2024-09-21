@@ -1,18 +1,27 @@
 project:
   type: website
-  output-dir: docs
 
 website:
-  title: "Home"
+  title: "Andre E. Kim"
   navbar:
     right:
-      - about.qmd
+      - href: index.qmd
+        text: Home
+      - href: photos.qmd
+        text: Photos
+      - href: posts.qmd
+        text: Blog
+    tools:
       - icon: github
-        href: https://github.com/
+        href: https://github.com
+    background: dark
+
+
 format:
   html:
-    theme: flatly
+    theme: yeti
     css: styles.css
+    toc: false
 
 
 

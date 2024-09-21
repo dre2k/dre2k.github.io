@@ -1,0 +1,12 @@
+---
+lightbox:
+    match: auto
+---
+
+## "I rather be outside"
+
+![Paicines CA (outside Pinnacles National Park), 2024](img/IMG_1721.jpg){group="trips"}
+
+![Little Lakes Hike in the Sierras, 2024](img/DSC_0200.jpg){group="trips"}
+
+![Mount Baldy area, 2024. Most of this area burned down in the recent Bridge fire T.T](img/IMG_2489.jpg){group="trips"}
