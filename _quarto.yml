@@ -7,8 +7,6 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: photos.qmd
-        text: Photos
       - href: posts.qmd
         text: Blog
     tools:
@@ -22,6 +20,3 @@ format:
     theme: yeti
     css: styles.css
     toc: false
-
-
-
