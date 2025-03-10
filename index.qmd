@@ -1,25 +1,24 @@
 ---
 title: "Andre E. Kim"
-image: img/IMG_1917.jpeg
+image: img/IMG_3204.png
 about:
-  template: trestles
+  template: marquee
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
-
+      href: https://www.linkedin.com/in/andre-e-kim-99740bb4/
+    - text: "{{< fa brands bluesky >}} Bluesky"
+      href: https://bsky.app/profile/choco314.bsky.social
+    - text: "{{< fa brands mastodon >}} Mastodon"
+      href: https://bsky.app/profile/choco314.bsky.social
 ---
+Hi welcome to my personal website / notebook / sandbox. Background in genetic epidemiology, business title is *Senior Genomic Data Scientist*. 
 
-## About Me
+Interests include tech, data science, R/python, AI/ML, MUSIC, biking, hiking, climbing, nature, art, beauty, self-improvement, introspection.  
 
-Hi there, I am a Senior Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.  
+# Education
+University of Southern California   
+**MPH, PhD Molecular Epidemiology**  
 
-This is a personal website and I'm using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting! 
-
-## Education
-
-University of Southern California  
-MPH, PhD Molecular Epidemiology
-
-UC Berkeley  
-B.A. in Molecular Cell Biology
+UC Berkeley    
+**B.A. in Molecular Cell Biology**  

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.30">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,10 +34,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-3a01e2046221230fdceeea94b1ec5d67.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3cfd336805a80ba98f0d257947eea447.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7bfda625c7ff35f40b8288d308b7c4dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,40 +111,44 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="img/IMG_1917.jpeg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-marquee">
+  <div class="about-image-container">
+    <img src="img/IMG_3204.png" class="about-image " style="width: 100%;">
+  </div>
+  <div class="about-contents">
+    <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Andre E. Kim</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header>
-    <div class="about-links">
-  <a href="https://linkedin.com" class="about-link" rel="" target="">
+</header> <main class="content" id="quarto-document-content">
+<p>Hi welcome to my personal website / notebook / sandbox. Background in genetic epidemiology, business title is <em>Senior Genomic Data Scientist</em>.</p>
+<p>Interests include tech, data science, R/python, AI/ML, MUSIC, biking, hiking, climbing, nature, art, beauty, self-improvement, introspection.</p>
+<section id="education" class="level1">
+<h1>Education</h1>
+<p>University of Southern California<br>
+<strong>MPH, PhD Molecular Epidemiology</strong></p>
+<p>UC Berkeley<br>
+<strong>B.A. in Molecular Cell Biology</strong></p>
+
+
+</section>
+</main> 
+    <div class="about-footer"><div class="about-links">
+  <a href="https://www.linkedin.com/in/andre-e-kim-99740bb4/" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
+  <a href="https://bsky.app/profile/choco314.bsky.social" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i> Bluesky</span>
+  </a>
+  <a href="https://bsky.app/profile/choco314.bsky.social" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="fa-brands fa-mastodon" aria-label="mastodon"></i> Mastodon</span>
+  </a>
+</div>
 </div>
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<section id="about-me" class="level2">
-<h2 data-anchor-id="about-me">About Me</h2>
-<p>Hi there, I am a Senior Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.</p>
-<p>This is a personal website and I’m using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting!</p>
-</section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>University of Southern California<br>
-MPH, PhD Molecular Epidemiology</p>
-<p>UC Berkeley<br>
-B.A. in Molecular Cell Biology</p>
-
-
-</section>
-</main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -220,8 +226,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -332,7 +336,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

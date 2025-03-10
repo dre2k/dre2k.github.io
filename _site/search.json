@@ -14,66 +14,24 @@
     "text": "Paicines CA (outside Pinnacles National Park), 2024\n\n\n\n\n\nLittle Lakes Trail in the Eastern Sierras, 2024\n\n\n\n\n\nSunset Peak, 2024. Most of this area burned down in the recent Bridge Fire T.T"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Andre E. Kim",
-    "section": "",
-    "text": "Hi there, I am a Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.\nThis is a personal website and I’m using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting!"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "Andre E. Kim",
-    "section": "",
-    "text": "Hi there, I am a Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.\nThis is a personal website and I’m using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting!"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Andre E. Kim",
-    "section": "Education",
-    "text": "Education\nUniversity of Southern California\nMPH, PhD Molecular Epidemiology\nUC Berkeley\nB.A. in Molecular Cell Biology"
-  },
-  {
-    "objectID": "posts/2024-06-17-california-taxes/2024-06-17-california-taxes.html",
-    "href": "posts/2024-06-17-california-taxes/2024-06-17-california-taxes.html",
-    "title": "Arguing with friends about California taxes",
-    "section": "",
-    "text": "Introduction\nIf you have friends or family, chances are at least one of them will shit on California and rant about how it’s screwing us on taxes.\nHere I perform the bare minimum (google) to find out how CA ranks vs. other states.. so I’m not talking nonsense while arguing with friends.\n\n\nTax Burdens\nWe know governments collect revenue to operate (schools, healthcare, infrastructure, programs, administrative costs, etc). States rely on unique combinations of income, sales, property taxes. In addition, an individual’s total tax burden depends heavily on their particular financial situation (income levels, property, etc), making direct comparisons complicated.\nI found this analysis comparing state-local tax burdens by state in the year 2022, and thought it provided some insight on this question of relative tax burden.\nBriefly, authors define tax burden as “state and local taxes paid by a state’s residents divided by that state’s share of net national product”, and includes:\n\nproperty\nsales\nexcise\nlicense taxes\nincome (when applicable)\ncorporate income\nestate/inheritance/gift\ndocumentary/transfer\nseverance\nspecial assessments\n\nThe idea is to calculate a standard measure of state-local tax burden to enable comparisons between states. While this is an aggregate measure (read: NOT an estimate of individual tax burden), I think it gives a good idea of where California stands relative to other states. Of course, there’s nuance in this calculation, such as the fact that people pay taxes states they do not reside in (tax shifting), and some states rely heavily on such incomes (e.g. Florida, Nevada), so it’s good to keep that in mind.\nSummary table 2022 (copied from the site):\n\n\nShow the code\ntax &lt;- fread(\"tax_foundation_2022.csv\") \n\ntax_df &lt;- tax %&gt;%\n  rename(State = state, \n         \"State-Local Effective Tax Rate\" = state_local_eff_tax, \n         Rank = rank, \n         \"State-Local Tax Burden per Capita\" = state_local_tax_burden_percapita, \n         \"Taxes Paid to Own State per Capita\" = tax_paid_own_state, \n         \"Taxes Paid to Other States Per Capita\" = tax_paid_other_states)\n\nkbl(tax_df) %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\")) \n\n\n\n\n\nState\nState-Local Effective Tax Rate\nRank\nState-Local Tax Burden per Capita\nTaxes Paid to Own State per Capita\nTaxes Paid to Other States Per Capita\n\n\n\n\nAlabama\n9.80%\n20\n$4,585\n$3,578\n$1,007\n\n\nAlaska\n4.60%\n1\n$2,943\n$1,527\n$1,416\n\n\nArizona\n9.50%\n15\n$5,156\n$3,997\n$1,159\n\n\nArkansas\n10.20%\n26\n$5,031\n$3,598\n$1,433\n\n\nCalifornia\n13.50%\n46\n$10,167\n$8,711\n$1,457\n\n\nColorado\n9.70%\n19\n$6,699\n$5,010\n$1,689\n\n\nConnecticut\n15.40%\n49\n$12,151\n$9,883\n$2,268\n\n\nDelaware\n12.40%\n42\n$7,170\n$5,580\n$1,591\n\n\nDistrict of Columbia\n12.00%\n-39\n$11,654\n$9,060\n$2,594\n\n\nFlorida\n9.10%\n11\n$5,406\n$3,533\n$1,873\n\n\nGeorgia\n8.90%\n8\n$4,862\n$3,711\n$1,151\n\n\nHawaii\n14.10%\n48\n$8,410\n$7,082\n$1,328\n\n\nIdaho\n10.70%\n29\n$5,402\n$4,140\n$1,262\n\n\nIllinois\n12.90%\n44\n$8,390\n$6,866\n$1,523\n\n\nIndiana\n9.30%\n14\n$5,030\n$3,965\n$1,064\n\n\nIowa\n11.20%\n34\n$6,086\n$4,812\n$1,274\n\n\nKansas\n11.20%\n33\n$6,353\n$4,971\n$1,382\n\n\nKentucky\n9.60%\n17\n$4,669\n$3,679\n$990\n\n\nLouisiana\n9.10%\n12\n$4,762\n$3,705\n$1,056\n\n\nMaine\n12.40%\n41\n$6,906\n$5,712\n$1,194\n\n\nMaryland\n11.30%\n35\n$7,680\n$5,940\n$1,740\n\n\nMassachusetts\n11.50%\n37\n$9,405\n$7,565\n$1,840\n\n\nMichigan\n8.60%\n5\n$4,720\n$3,595\n$1,125\n\n\nMinnesota\n12.10%\n39\n$7,763\n$6,316\n$1,448\n\n\nMississippi\n9.80%\n21\n$4,220\n$3,422\n$798\n\n\nMissouri\n9.30%\n13\n$4,953\n$3,666\n$1,287\n\n\nMontana\n10.50%\n27\n$5,795\n$4,200\n$1,595\n\n\nNebraska\n11.50%\n38\n$6,720\n$5,327\n$1,393\n\n\nNevada\n9.60%\n18\n$5,554\n$3,932\n$1,622\n\n\nNew Hampshire\n9.60%\n16\n$6,593\n$4,784\n$1,809\n\n\nNew Jersey\n13.20%\n45\n$9,648\n$7,696\n$1,952\n\n\nNew Mexico\n10.20%\n25\n$4,835\n$3,859\n$977\n\n\nNew York\n15.90%\n50\n$12,083\n$10,380\n$1,702\n\n\nNorth Carolina\n9.90%\n23\n$5,299\n$4,156\n$1,143\n\n\nNorth Dakota\n8.80%\n7\n$5,403\n$3,800\n$1,603\n\n\nOhio\n10.00%\n24\n$5,530\n$4,380\n$1,149\n\n\nOklahoma\n9.00%\n10\n$4,527\n$3,380\n$1,148\n\n\nOregon\n10.80%\n31\n$6,572\n$5,191\n$1,381\n\n\nPennsylvania\n10.60%\n28\n$6,723\n$5,354\n$1,369\n\n\nRhode Island\n11.40%\n36\n$6,948\n$5,273\n$1,675\n\n\nSouth Carolina\n8.90%\n9\n$4,596\n$3,365\n$1,231\n\n\nSouth Dakota\n8.40%\n4\n$5,196\n$3,526\n$1,670\n\n\nTennessee\n7.60%\n3\n$4,036\n$3,082\n$954\n\n\nTexas\n8.60%\n6\n$4,994\n$3,849\n$1,146\n\n\nUtah\n12.10%\n40\n$6,750\n$5,346\n$1,404\n\n\nVermont\n13.60%\n47\n$7,958\n$6,532\n$1,426\n\n\nVirginia\n12.50%\n43\n$7,979\n$6,367\n$1,612\n\n\nWashington\n10.70%\n30\n$7,803\n$6,069\n$1,734\n\n\nWest Virginia\n9.80%\n22\n$4,479\n$3,444\n$1,034\n\n\nWisconsin\n10.90%\n32\n$6,231\n$4,911\n$1,320\n\n\nWyoming\n7.50%\n2\n$4,691\n$2,647\n$2,045\n\n\n\n\n\n\n\n \nSummary from the website:\n\nThe states with the highest state-local tax burdens in calendar year 2022 were:\n\nNew York (15.9 percent)\nConnecticut (15.4 percent)\nHawaii (14.1 percent)\nVermont (13.6 percent)\nCalifornia (13.5 percent)\nNew Jersey (13.2 percent)\nIllinois (12.9 percent)\nVirginia (12.5 percent)\nDelaware (12.4 percent)\nMaine (12.4 percent)\n\nThe states with the lowest state-local tax burdens in calendar year 2022 were:\n\nAlaska (4.6 percent)\nWyoming (7.5 percent)\nTennessee (7.6 percent)\nSouth Dakota (8.4 percent)\nMichigan (8.6 percent)\nTexas (8.6 percent)\nNorth Dakota (8.8 percent)\nGeorgia (8.9 percent)\nSouth Carolina (8.9 percent)\nOklahoma (9.0 percent)\n\n\n\n\nCalifornia\nCalifornia is ranked 4th in terms of state-local tax burden (after NY, CT, HI, and VT). For the moment, let’s put aside costs of living and other factors that go into deciding where to live — is the high tax burden enough of a reason for me to move to Texas (and replace my CA license plate ASAP)\nStart by visualizing effective tax rates:\n\n\nShow the code\npdat &lt;- tax %&gt;%\n  mutate(state_local_eff_tax = as.numeric(gsub(\"[^0-9.-]\", \"\", state_local_eff_tax)), \n         state = factor(state, levels = state[order(state_local_eff_tax)])) %&gt;%\n  arrange(state_local_eff_tax) %&gt;%\n  mutate(fill = ifelse(state == \"California\", 'yes', 'no'))\n\navg_tax = mean(pdat$state_local_eff_tax)\n\nggplot(pdat, aes(x = state, y = state_local_eff_tax, fill = fill)) +\n  geom_bar(stat = 'identity') + \n  scale_fill_manual(values = c('grey','gold')) + \n  theme_bw() +\n  theme(axis.text.x = element_text(angle = 90, hjust = 1), \n        legend.position = \"none\") + \n  labs(x = \"State\", y = \"State-local Effective Tax\", title = \"State-local effective tax rate by state (CA in gold)\") + \n  geom_hline(yintercept = avg_tax, color = \"red\", linetype = \"dashed\", size = 0.5)\n\n\n\n\n\n\n\n\n\nNational average state-local tax burden is 11.6%, while California’s is 13.5% — the percentage differential is 1.9%. Translating to per capita dollar amounts paid to one’s OWN state:\n\n\nShow the code\npdat &lt;- tax %&gt;%\n  mutate(tax_paid_own_state = as.numeric(gsub(\"[^0-9.-]\", \"\", tax_paid_own_state)), \n         state = factor(state, levels = state[order(tax_paid_own_state)])) %&gt;%\n  arrange(tax_paid_own_state) %&gt;%\n  mutate(fill = ifelse(state == \"California\", 'yes', 'no'))\n\navg_tax = mean(pdat$tax_paid_own_state)\n\nggplot(pdat, aes(x = state, y = tax_paid_own_state, fill = fill)) +\n  geom_bar(stat = 'identity') + \n  scale_fill_manual(values = c('grey','blue')) + \n  theme_bw() +\n  theme(axis.text.x = element_text(angle = 90, hjust = 1), \n        legend.position = \"none\") + \n  labs(x = \"State\", y = \"State-local taxes paid\", title = \"State-local taxes paid to own state (CA in gold)\") + \n  geom_hline(yintercept = avg_tax, color = \"orange\", linetype = \"dashed\", size = 0.5)\n\n\n\n\n\n\n\n\n\n\n\nShow the code\ntmp &lt;- data.frame(\"National Average\" = \"$4,989.69\", \n                  \"California Average\" = \"$8,711\", \n                  Difference = \"$3721.31\")\nkbl(tmp) %&gt;%\n  kable_styling(bootstrap_options = c(\"striped\", \"hover\", \"condensed\")) \n\n\n\n\n\nNational.Average\nCalifornia.Average\nDifference\n\n\n\n\n$4,989.69\n$8,711\n$3721.31\n\n\n\n\n\n\n\n \nSo a 1.9% differential translate to ~ $3,700 per capita over the nationale average. My take away would be that yes CA pays more in taxes per capita, but I would also hesitate to balk at the tax premium we pay over the rest of country (and might actually argue that it’s ‘worth it’).\nAnyway, obviously cost of living matters, and averages are sensitive to outliers, and things like political environment and culture and amenities and services are important factors in deciding where to live. But perhaps in terms of tax burden alone, CA isn’t the hellhole people think it is. Ideally it would be really interesting if there was a program to calculate theoretical tax burdens in any city/state for a given individual. Maybe if you’re middle class American, it doesn’t make a HUGE difference, but if you’re Jeff Bezos it makes sense to move to Florida.\nAlso – what’s it like living in Alaska?"
-  },
-  {
-    "objectID": "posts/2023-09-03-hello-world-r/testing_20230903.html",
-    "href": "posts/2023-09-03-hello-world-r/testing_20230903.html",
-    "title": "Hello World R",
-    "section": "",
-    "text": "Creating R qmd post\n\n\nCode\nhead(iris)\n\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\nCode\nggplot(iris, aes(Sepal.Length, Sepal.Width)) + \ngeom_point()"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Andre E. Kim",
     "section": "",
-    "text": "Hi there, I am a Senior Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.\nThis is a personal website and I’m using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting!"
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Andre E. Kim",
-    "section": "",
-    "text": "Hi there, I am a Senior Genomic Data Scientist at AncestryDNA, interested in all things genetics, epidemiology, and machine learning.\nThis is a personal website and I’m using it as a sandbox to write about random topics, document practice/toy analyses, take notes on self-study progress. My primary focus is skill development and growth, and connecting!"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Andre E. Kim",
-    "section": "Education",
-    "text": "Education\nUniversity of Southern California\nMPH, PhD Molecular Epidemiology\nUC Berkeley\nB.A. in Molecular Cell Biology"
+    "text": "Hi welcome to my personal website / notebook / sandbox. Background in genetic epidemiology, business title is Senior Genomic Data Scientist.\nInterests include tech, data science, R/python, AI/ML, MUSIC, biking, hiking, climbing, nature, art, beauty, self-improvement, introspection.\n\nEducation\nUniversity of Southern California\nMPH, PhD Molecular Epidemiology\nUC Berkeley\nB.A. in Molecular Cell Biology"
   },
   {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "Andre E. Kim",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nArguing with friends about California taxes\n\n\n\n\n\n\nDives\n\n\nTaxes\n\n\n\n\n\n\n\n\n\nJun 17, 2024\n\n\n6 min\n\n\n\n\n\n\n\n\n\n\n\n\nHello World R\n\n\n\n\n\n\nMisc\n\n\n\n\n\n\n\n\n\nAug 29, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHello World\n\n\n\n\n\n\nyoutube\n\n\n\n\n\n\n\n\n\nMar 9, 2025\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-03-09-hello-world/hello-world.html",
+    "href": "posts/2025-03-09-hello-world/hello-world.html",
+    "title": "Hello World",
+    "section": "",
+    "text": "``"
   }
 ]
